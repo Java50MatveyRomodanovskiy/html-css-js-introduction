@@ -1,0 +1,32 @@
+.board{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around;
+     height: 50vw; */
+}
+.board-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50vw;
+}
+.cell-white{
+    width: 5vw;
+    height: 5vw;
+    border: solid 1px gray;
+}
+.cell-black{
+    width: 5vw;
+    background-color: black;
+    height: 5vw;
+    border: solid 1px gray;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+html{
+    height: 100%;
+}
