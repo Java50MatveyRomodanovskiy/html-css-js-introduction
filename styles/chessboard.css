@@ -1,25 +1,23 @@
 .board{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around;
-     height: 50vw; */
+    justify-content: left;
 }
 .board-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 50vw;
+    justify-content: right;
 }
 .cell-white{
     width: 5vw;
     height: 5vw;
-    border: solid 1px gray;
+    border: solid 1px black;
 }
 .cell-black{
     width: 5vw;
-    background-color: black;
     height: 5vw;
-    border: solid 1px gray;
+    background-color: black;
+    border: solid 1px black;
 }
 body{
     display: flex;
