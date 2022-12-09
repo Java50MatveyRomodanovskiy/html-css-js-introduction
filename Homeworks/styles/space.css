@@ -59,6 +59,7 @@ h2{
     width: var(--detail-image-width);
     height:var(--detail-image-height);
     margin: auto;
+    object-fit: cover;
 }
 .details-title {
     display: block;
@@ -68,6 +69,8 @@ h2{
     background-color: rgb(10, 77, 136);
     height: 7vw;
     font-size: 1.2em;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .thumbnails-item:hover{
     transform: scale(1.1);
@@ -97,6 +100,7 @@ h2{
     display: block;
     width: var(--thumbnails-image-width);
     height: var(--thumbnails-image-height);
+    object-fit: cover;
 
 }
 .thumbnails-title {
@@ -120,6 +124,10 @@ h2{
     .main-class{
         flex-direction: row;
     }
+    h2{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     .logo {
         display: block;
         text-align: center;
@@ -128,10 +136,7 @@ h2{
         font-size: 0.9em;
         text-transform: uppercase;
         font-family: nasalisation;
-    }
-    h2{
-        margin-top: 6px;
-        margin-bottom: 6px;
+        
     }
     .details-image {
         display: flex;
@@ -143,6 +148,7 @@ h2{
         width: var(--detail-image-width);
         height:var(--detail-image-height);
         border-radius: 25%;
+        object-fit: cover
     }
     .details-title {
         display: flex;
@@ -152,6 +158,7 @@ h2{
         align-items: center;
         height: 6vw;
         font-family: spacefamily;
+        border-radius: 10%;
     }
     .thumbnails-list{
         display: flex;
@@ -162,12 +169,16 @@ h2{
         flex-wrap: nowrap;
         justify-content: flex-start;
         padding-left: 9px;
-        padding-right: 9px;
+        padding-right: 3vw;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .thumbnails-image {
         width: var(--thumbnails-image-width);
         height: var(--thumbnails-image-height);
-        
+        object-fit: cover
     }
     .thumbnails-item{
         display: block;
@@ -187,10 +198,10 @@ h2{
 }
 @media (min-width: 1000px){
     body{
-        /* --detail-image-width: 60vw;
-        --detail-image-height: 48vw; */
-        --thumbnails-image-width: 15vw;
-        --thumbnails-image-height: 8vw;
+         /* --detail-image-width: 60vw;
+        --detail-image-height: 30vw;  */
+        --thumbnails-image-width: 13vw;
+        --thumbnails-image-height: 7vw;
         --thumbnails-title-height: calc(--thumbnails-image-height * 1.3)
         }
     .logo {
@@ -198,8 +209,8 @@ h2{
         text-transform: uppercase;
     }
     h2{
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .details-image {
         margin-right: 2vw;
