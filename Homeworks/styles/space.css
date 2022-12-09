@@ -69,6 +69,9 @@ h2{
     height: 7vw;
     font-size: 1.2em;
 }
+.thumbnails-item:hover{
+    transform: scale(1.1);
+}
 .thumbnails-list {
     display: flex;
     flex-wrap: wrap;
@@ -76,8 +79,10 @@ h2{
     overflow-y: scroll;
     list-style: none;
     justify-content: space-around;
-    padding-left: 0;
-    margin:0;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: left 2px;
+    margin-right: 2px;
 }
 .thumbnails-item {
     border: solid 2px rgb(44, 1, 84);
@@ -152,10 +157,12 @@ h2{
         display: flex;
         order: -1;
         max-height: 90vh;
-        margin: 0;
+        padding: 1vw;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex-start;
+        padding-left: 9px;
+        padding-right: 9px;
     }
     .thumbnails-image {
         width: var(--thumbnails-image-width);
