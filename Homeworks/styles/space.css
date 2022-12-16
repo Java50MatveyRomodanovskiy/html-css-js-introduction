@@ -54,9 +54,14 @@ h2{
     align-items: center;
     margin-bottom: 2vh;
     justify-content: center;
+    transition: 4s cubic-bezier(0.8, 2, 0.2, 1);
 }
 .hidden .details-container{
     display: none;
+}
+.is-point{
+    transform: scale(0.001);
+    transition: 0s;
 }
 .details-frame{
     position: relative;
