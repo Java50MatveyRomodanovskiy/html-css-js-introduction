@@ -24,10 +24,10 @@ body {
     color: aliceblue;
     margin: 0;
 }
-#hideImage{
+#hideCont-button{
     position: absolute;
     top: 2vh;
-    right: 3vw;
+    right: 2vw;
 }
 .logo {
     display: block;
