@@ -1,10 +1,8 @@
 function getDigitsSum(number){
     number = Math.trunc(number);
     let sum = 0;
-    if (number < 0){
-        number = - number;
-    }
-    while (number > 0) {
+    number = Math.abs(number);
+    while (number) {
         sum = sum + (number % 10);
         number = Math.trunc(number / 10);
     }
@@ -12,14 +10,21 @@ function getDigitsSum(number){
     }
 
 function computeExpression(expressionStr){
-    return eval(expressionStr);
+    let res;
+    try{
+    res =    eval(expressionStr);
+    
+    } catch (e){
+        res = NaN;
+    }
+    return res;
     //task for searching in Internet
     //only one line code
     //example "9000 / ((10 + 20) **2)", returns 10
 }
 
 function printAnanas(){
-    console.log (("A" + "AS"/2 +"AS").toLowerCase());
+    console.log (("A" + +"A" +"AS").toLowerCase());
 }
 
 function reverse(number){
@@ -29,17 +34,17 @@ function reverse(number){
         string = string + "-";
         number = - number;
     }
-    while (number > 0) {
+     do {
         string = string + (number % 10);
         number = Math.trunc(number / 10);
-    }
+    }while (number);
     return string;
     
     // returns string with digits of a given number in the reversed order
     //example reverse(1234) should return "4321" только целая часть
     // revers (-1234) should return "-4321"
 }
-console.log(getDigitsSum(-100010001.2345)); // check function getDigitsSum
-console.log(computeExpression("9000 / ((10 + 20) **2)")); // check function computeExpression
+console.log(getDigitsSum(123)); // check function getDigitsSum
+console.log(computeExpression("(9+100)/2)")); // check function computeExpression
 printAnanas(); // check function printAnanas
-console.log(reverse(-101001.123)); //check function reverse
+console.log(reverse(-0)); //check function reverse
