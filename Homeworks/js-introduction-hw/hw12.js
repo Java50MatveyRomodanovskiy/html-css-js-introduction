@@ -1,18 +1,19 @@
 function myParseInt(str, base) {
     base = base || 10;
     let res = 0;
-    let flagNegative = 1
-    for(let i = 0; i < str.length; i++) {
-             if (i == 0 && str[i] == '-'){
+    let index = 0;
+    let flagNegative = 1;
+    if (str[0] == '-'){
                  flagNegative = -1;
-            } else {
+                 index = 1;
+    }
+    for(let i = index; i < str.length; i++) {
             if (getCode(str[i]) < base) {
             res = res * base + getCode(str[i]);
             }else {
                 return res*flagNegative;}
             }
-    }
-    return res*flagNegative;
+ return res*flagNegative;
 }
 function getCode(symbol) {
     symbol = symbol.toLowerCase();
