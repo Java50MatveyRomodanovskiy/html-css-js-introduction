@@ -84,8 +84,8 @@ if (!(str100-myStr100)){
     console.log('My ToString works with negative digits')
 }
 num200 = -123.45;
-str200 = num200.toString();
-myStr200 = myToString(num200);
+str200 = num200.toString(36);
+myStr200 = myToString(num200, 36);
 if (!(str200-myStr200)){
     console.log('My ToString works with fractional digits')
 }
